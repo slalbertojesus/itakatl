@@ -1,0 +1,22 @@
+{
+  "name": "itakatl.io",
+  "version": "1.0.0",
+  "description": "Responsiveness browser ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slalbertojesus/itakatl.git"
+  },
+  "author": "Alberto Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slalbertojesus/itakatl/issues"
+  },
+  "homepage": "https://github.com/slalbertojesus/itakatl#readme",
+  "devDependencies": {
+    "electron": "^6.0.0"
+  }
+}
