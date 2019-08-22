@@ -5,9 +5,22 @@ var ById = function (id) {
     return document.getElementById(id);
 }
 
+const ses = win.webContents.session
+      
+//Crear un boton que destruya el cache o los archivos continuos 
+
+document.getElementById('cache').onclick = function() {
+    ses.clearCache(() => {
+       alert("Cache cleared!");
+     });
+}
+    
+
+       //hacer que la página sea visible en varios webviews
+       //hacer que se haga scroll en todos los webviews al mismo tiempo 
+
 var omni = ById('url'),
     view = ById('view');
-
 
 function updateURL (event) {
     if (event.keyCode === 13) {
@@ -30,4 +43,3 @@ function updateNav (event) {
 }
 
 omni.addEventListener('keydown', updateURL);
-view.addEventListener('did-finish-load', updateNav);
