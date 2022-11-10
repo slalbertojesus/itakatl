@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/slalbertojesus/itakatl#readme",
   "devDependencies": {
-    "electron": "^6.0.0"
+    "electron": "^18.3.7"
   }
 }
